@@ -85,6 +85,22 @@ app.post('/api/patients', async (req, res) => {
         res.status(500).json({ message: 'Server error', error: err.message });
     }
 });
+// Update patient endpoint (admin or patients role)
+app.put('/api/patients/:id', async (req, res) => {
+    const { username, password, firstName, lastName, dob, gender, address } = req.body;
+    const patientId = req.params.id;
+    try {
+        const role = await getUserRole(username, password);
+        if (role === 'admin' || role === 'patients') {
+            await mssql.query`UPDATE Patients SET FirstName=${firstName}, LastName=${lastName}, DateOfBirth=${dob}, Gender=${gender}, Address=${address} WHERE PatientID=${patientId}`;
+            res.json({ message: 'Patient updated' });
+        } else {
+            res.status(403).json({ message: 'Forbidden: insufficient role' });
+        }
+    } catch (err) {
+        res.status(500).json({ message: 'Server error', error: err.message });
+    }
+});
 // Delete patient endpoint (admin or patients role)
 app.delete('/api/patients/:id', async (req, res) => {
     const { username, password } = req.query;
@@ -125,6 +141,22 @@ app.post('/api/drugs', async (req, res) => {
         if (role === 'admin' || role === 'drugs') {
             await mssql.query`INSERT INTO Drugs (Name, Description, Dosage) VALUES (${name}, ${description}, ${dosage})`;
             res.json({ message: 'Drug added' });
+        } else {
+            res.status(403).json({ message: 'Forbidden: insufficient role' });
+        }
+    } catch (err) {
+        res.status(500).json({ message: 'Server error', error: err.message });
+    }
+});
+// Update drug endpoint (admin or drugs role)
+app.put('/api/drugs/:id', async (req, res) => {
+    const { username, password, name, description, dosage } = req.body;
+    const drugId = req.params.id;
+    try {
+        const role = await getUserRole(username, password);
+        if (role === 'admin' || role === 'drugs') {
+            await mssql.query`UPDATE Drugs SET Name=${name}, Description=${description}, Dosage=${dosage} WHERE DrugID=${drugId}`;
+            res.json({ message: 'Drug updated' });
         } else {
             res.status(403).json({ message: 'Forbidden: insufficient role' });
         }
