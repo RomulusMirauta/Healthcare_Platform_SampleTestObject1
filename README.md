@@ -2,7 +2,8 @@
 Sample Healthcare Platform
 </h1>
 
-A sample healthcare platform with user authentication, role-based access, and management of patients and drugs. Built with Node.js, Express, MS SQL Server, and a modern HTML/CSS/JS frontend.
+<p align="center">
+A sample healthcare platform with user authentication, role-based access, and management of patients and drugs.<br>Built with Node.js, Express, MS SQL Server, and a modern HTML/CSS/JS frontend.</p>
 
 <br>
 
@@ -31,6 +32,8 @@ Table of Contents
   - [Drugs Page](#drugs-page)
 - [VIII. Other Screenshots](#viii-other-screenshots)
   - [Azure Data Studio](#azure-data-studio)
+    - [Initial Database Schema](#initial-database-schema)
+    - [Examples of simple SQL queries](#examples-of-simple-sql-queries)
 
 <br>
 
@@ -138,7 +141,7 @@ The platform will then be available at:
 - Platform runs locally on Windows (tested with PowerShell and Node.js)
 - Database: MS SQL Server, SQL Server 2022 Configuration Manager, SQL Server Management Studio 21, Azure Data Studio
 - Code editor: Visual Studio Code
-- Browsers: Google Chrome (chromium), Mozilla Firefox, Safari (webkit)
+- Browsers: Google Chrome (chromium), Mozilla Firefox (firefox), Safari (webkit)
 
 <br>
 
@@ -166,7 +169,11 @@ The platform will then be available at:
 
 ### Azure Data Studio
 
+#### Initial Database Schema
+
 ![Azure](screenshots/other/initial_schema.png)
+
+#### Examples of simple SQL queries
 
 ![Azure](screenshots/other/select_all.png)
 
