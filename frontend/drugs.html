@@ -37,12 +37,22 @@
                         <div class="drug-header">
                             <span class="drug-icon">💊</span>
                             <span class="drug-name">${d.Name}</span>
+                            <button class="remove-btn" title="Remove Drug" style="margin-left:auto;background:#ffd6d6;color:#d32f2f;border:none;border-radius:6px;padding:6px 14px;cursor:pointer;font-size:0.98em;">Remove</button>
                         </div>
                         <div class="drug-details">
                             <div><strong>Dosage:</strong> ${d.Dosage}</div>
                             <div><strong>Description:</strong> ${d.Description}</div>
                         </div>
                     `;
+                    card.querySelector('.remove-btn').onclick = async function() {
+                        if (confirm('Are you sure you want to remove this drug?')) {
+                            const { username, password } = getAuth();
+                            await fetch(`http://localhost:3001/api/drugs/${d.DrugID}?username=${encodeURIComponent(username)}&password=${encodeURIComponent(password)}`, {
+                                method: 'DELETE'
+                            });
+                            loadDrugs();
+                        }
+                    };
                     list.appendChild(card);
                 });
             } else {

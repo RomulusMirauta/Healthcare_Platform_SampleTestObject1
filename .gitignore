@@ -27,7 +27,7 @@ Thumbs.db
 /build/
 
 # Ignore local SQL scripts
-*.sql
+# *.sql
 !database/schema.sql
 
 # Misc

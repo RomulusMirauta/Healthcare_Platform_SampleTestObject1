@@ -85,6 +85,23 @@ app.post('/api/patients', async (req, res) => {
         res.status(500).json({ message: 'Server error', error: err.message });
     }
 });
+// Delete patient endpoint (admin or patients role)
+app.delete('/api/patients/:id', async (req, res) => {
+    const { username, password } = req.query;
+    const patientId = req.params.id;
+    try {
+        const role = await getUserRole(username, password);
+        if (role === 'admin' || role === 'patients') {
+            await mssql.query`DELETE FROM Patients WHERE PatientID = ${patientId}`;
+            res.json({ message: 'Patient deleted' });
+        } else {
+            res.status(403).json({ message: 'Forbidden: insufficient role' });
+        }
+    } catch (err) {
+        res.status(500).json({ message: 'Server error', error: err.message });
+    }
+});
+
 
 // Drugs endpoints (require admin or drugs role)
 app.get('/api/drugs', async (req, res) => {
@@ -115,6 +132,23 @@ app.post('/api/drugs', async (req, res) => {
         res.status(500).json({ message: 'Server error', error: err.message });
     }
 });
+// Delete drug endpoint (admin or drugs role)
+app.delete('/api/drugs/:id', async (req, res) => {
+    const { username, password } = req.query;
+    const drugId = req.params.id;
+    try {
+        const role = await getUserRole(username, password);
+        if (role === 'admin' || role === 'drugs') {
+            await mssql.query`DELETE FROM Drugs WHERE DrugID = ${drugId}`;
+            res.json({ message: 'Drug deleted' });
+        } else {
+            res.status(403).json({ message: 'Forbidden: insufficient role' });
+        }
+    } catch (err) {
+        res.status(500).json({ message: 'Server error', error: err.message });
+    }
+});
+
 
 const PORT = 3001;
 app.listen(PORT, () => {

@@ -12,13 +12,24 @@
     <form id="addPatientForm">
         <input type="text" id="firstName" placeholder="First Name" required>
         <input type="text" id="lastName" placeholder="Last Name" required>
-        <input type="date" id="dob" required>
+        <div style="display:flex;align-items:center;gap:8px;">
+            <input type="date" id="dob" required style="flex:1;">
+            <button type="button" id="fillTodayBtn" title="Fill today" style="padding:4px 10px;font-size:0.95em;background:#e0eafc;color:#0074d9;border:none;border-radius:6px;cursor:pointer;">Today</button>
+        </div>
         <input type="text" id="gender" placeholder="Gender" required>
         <input type="text" id="address" placeholder="Address" required>
         <button type="submit">Add Patient</button>
     </form>
     <div id="patientsList" class="patients-list"></div>
     <script>
+        // Fill today's date in DOB field
+        document.getElementById('fillTodayBtn').onclick = function() {
+            const today = new Date();
+            const yyyy = today.getFullYear();
+            const mm = String(today.getMonth() + 1).padStart(2, '0');
+            const dd = String(today.getDate()).padStart(2, '0');
+            document.getElementById('dob').value = `${yyyy}-${mm}-${dd}`;
+        };
         function getAuth() {
             return {
                 username: localStorage.getItem('username'),
@@ -45,6 +56,7 @@
                             <div class="patient-header">
                                 <span class="patient-avatar">👤</span>
                                 <span class="patient-name">${p.FirstName} ${p.LastName}</span>
+                                <button class="remove-btn" title="Remove Patient" style="margin-left:auto;background:#ffd6d6;color:#d32f2f;border:none;border-radius:6px;padding:6px 14px;cursor:pointer;font-size:0.98em;">Remove</button>
                             </div>
                             <div class="patient-details">
                                 <div><strong>DOB:</strong> ${formatDate(p.DateOfBirth)}</div>
@@ -52,6 +64,15 @@
                                 <div><strong>Address:</strong> ${p.Address || ''}</div>
                             </div>
                         `;
+                        card.querySelector('.remove-btn').onclick = async function() {
+                            if (confirm('Are you sure you want to remove this patient?')) {
+                                const { username, password } = getAuth();
+                                await fetch(`http://localhost:3001/api/patients/${p.PatientID}?username=${encodeURIComponent(username)}&password=${encodeURIComponent(password)}`, {
+                                    method: 'DELETE'
+                                });
+                                loadPatients();
+                            }
+                        };
                         list.appendChild(card);
                     });
                 } else {
