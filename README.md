@@ -14,27 +14,27 @@ Table of Contents
 
 I. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [Purposes](#i-purposes) <br>
 II. &nbsp;&nbsp;&nbsp;&nbsp; [Main Features](#ii-main-features) <br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; II. a. [User Authentication](#user-authentication) <br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; II. b. [Role-Based Dashboard](#role-based-dashboard) <br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; II. c. [Patients Management](#patients-management) <br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; II. d. [Drugs Management](#drugs-management) <br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; II. e. [Navigation](#navigation) <br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; II. f. [API Endpoints](#api-endpoints) <br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; II. g. [UI/UX](#uiux) <br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; II. h. [Security](#security) <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; II. a. [User Authentication](#ii-a-user-authentication) <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; II. b. [Role-Based Dashboard](#ii-b-role-based-dashboard) <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; II. c. [Patients Management](#ii-c-patients-management) <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; II. d. [Drugs Management](#ii-d-drugs-management) <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; II. e. [Navigation](#ii-e-navigation) <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; II. f. [API Endpoints](#ii-f-api-endpoints) <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; II. g. [UIUX](#ii-g-uiux) <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; II. h. [Security](#ii-h-security) <br>
 III. &nbsp;&nbsp;&nbsp; [Getting Started](#iii-getting-started) <br>
-IV. &nbsp;&nbsp;&nbsp; [IV. AI Info](#iv-ai-info) <br>
+IV. &nbsp;&nbsp;&nbsp; [AI Info](#iv-ai-info) <br>
 V. &nbsp;&nbsp;&nbsp;&nbsp; [Main Technologies Used](#v-main-technologies-used) <br>
 VI. &nbsp;&nbsp;&nbsp; [SW Info](#vi-sw-info) <br>
 VII. &nbsp;&nbsp; [Platform Screenshots](#vii-platform-screenshots) <br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; VII. a. [Login Page](#login-page) <br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; VII. b. [Dashboard](#dashboard) <br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; VII. c. [Patients Page](#patients-page) <br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; VII. d. [Drugs Page](#drugs-page) <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; VII. a. [Login Page](#vii-a-login-page) <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; VII. b. [Dashboard](#vii-b-dashboard) <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; VII. c. [Patients Page](#vii-c-patients-page) <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; VII. d. [Drugs Page](#vii-d-drugs-page) <br>
 VIII. &nbsp; [Other Screenshots](#viii-other-screenshots) <br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; VIII. a. [Azure Data Studio](#azure-data-studio) <br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; VIII. b. [Initial Database Schema](#initial-database-schema) <br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; VIII. c. [Examples of simple SQL queries](#examples-of-simple-sql-queries) <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; VIII. a. [Azure Data Studio](#viii-a-azure-data-studio) <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; VIII. b. [Initial Database Schema](#viii-b-initial-database-schema) <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; VIII. c. [Examples of simple SQL queries](#viii-c-examples-of-simple-sql-queries) <br>
 
 <br>
 
