@@ -33,8 +33,8 @@ VII. &nbsp;&nbsp; [Platform Screenshots](#vii-platform-screenshots) <br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; VII. d. [Drugs Page](#vii-d-drugs-page) <br>
 VIII. &nbsp; [Other Screenshots](#viii-other-screenshots) <br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; VIII. a. [Azure Data Studio](#viii-a-azure-data-studio) <br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; VIII. b. [Initial Database Schema](#viii-b-initial-database-schema) <br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; VIII. c. [Examples of simple SQL queries](#viii-c-examples-of-simple-sql-queries) <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; - [Initial Database Schema](#viii-b-initial-database-schema) <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; - [Examples of simple SQL queries](#viii-c-examples-of-simple-sql-queries) <br>
 
 <br>
 
@@ -173,11 +173,11 @@ The platform will then be available at:
 
 ### VIII. a. Azure Data Studio
 
-#### VIII. a. 1. Initial Database Schema
+#### *Initial Database Schema*
 
 ![Azure](screenshots/other/initial_schema.png)
 
-#### VIII. a. 2. Examples of simple SQL queries
+#### *Examples of simple SQL queries*
 
 ![Azure](screenshots/other/select_all.png)
 
