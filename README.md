@@ -173,11 +173,11 @@ The platform will then be available at:
 
 ### VIII. a. Azure Data Studio
 
-#### VIII. b. Initial Database Schema
+#### VIII. a. 1. Initial Database Schema
 
 ![Azure](screenshots/other/initial_schema.png)
 
-#### VIII. c. Examples of simple SQL queries
+#### VIII. a. 2. Examples of simple SQL queries
 
 ![Azure](screenshots/other/select_all.png)
 
