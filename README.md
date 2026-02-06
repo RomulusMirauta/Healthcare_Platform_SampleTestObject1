@@ -31,9 +31,9 @@ VII. &nbsp;&nbsp; [Platform Screenshots](#vii-platform-screenshots) <br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; VII. b. [Dashboard](#vii-b-dashboard) <br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; VII. c. [Patients Page](#vii-c-patients-page) <br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; VII. d. [Drugs Page](#vii-d-drugs-page) <br>
-VIII. &nbsp; [Other Screenshots - Azure Data Studio](#viii-other-screenshots) <br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; VIII. a. [Initial Database Schema](#viii-b-initial-database-schema) <br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; VIII. b. [Examples of simple SQL queries](#viii-c-examples-of-simple-sql-queries) <br>
+VIII. &nbsp; [Other Screenshots - Azure Data Studio](#viii-other-screenshots---azure-data-studio) <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; VIII. a. [Initial Database Schema](#viii-a-initial-database-schema) <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; VIII. b. [Examples of simple SQL queries](#viii-b-examples-of-simple-sql-queries) <br>
 
 <br>
 
