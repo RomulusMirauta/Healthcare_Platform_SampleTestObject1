@@ -45,7 +45,10 @@ This project demonstrates a sample test object (a healthcare platform used as a 
 - Showcase a full-stack web application with user authentication and role-based access.
 - Provide a clean, modern UI for managing patients and drugs.
 - Serve as a template for similar CRUD-based business applications.
-- Serve as Test Object for [SampleTestsPlaywright1](https://github.com/RomulusMirauta/SampleTestsPlaywright1).
+- Serve as Test Object for:
+  - [Playwright_JavaScript_TypeScript_Healthcare_Platform](https://github.com/RomulusMirauta/Playwright_JavaScript_TypeScript_Healthcare_Platform)
+  - [Cypress_Healthcare_Platform](https://github.com/RomulusMirauta/Cypress_Healthcare_Platform)
+  - [Selenium_Java_BDD_Cucumber_Healthcare_Platform](https://github.com/RomulusMirauta/Selenium_Java_BDD_Cucumber_Healthcare_Platform)
 
 <br>
 
