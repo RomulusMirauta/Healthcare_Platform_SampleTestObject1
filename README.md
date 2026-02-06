@@ -54,36 +54,36 @@ This project demonstrates a sample test object (a healthcare platform used as a 
 
 ## II. Main Features
 
-### User Authentication
+### II. a. User Authentication
 
 - Login form with username and password
 - Role-based access (admin, patients, drugs)
 
-### Role-Based Dashboard
+### II. b. Role-Based Dashboard
 
 - Dashboard shows only the tabs/buttons allowed for the logged-in user's role
 - Username displayed in the top-right corner when logged in
 
-### Patients Management
+### II. c. Patients Management
 
 - View all patients (admin, patients roles)
 - Add new patients (admin, patients roles)
 - Remove patients (admin, patients roles)
 - Patients displayed in modern, styled cards
 
-### Drugs Management
+### II. d. Drugs Management
 
 - View all drugs (admin, drugs roles)
 - Add new drugs (admin, drugs roles)
 - Remove drugs (admin, drugs roles)
 - Drugs displayed in modern, styled cards
 
-### Navigation
+### II. e. Navigation
 
 - Back button on Patients and Drugs pages to return to dashboard
 - Logout button clears session and returns to login
 
-### API Endpoints
+### II. f. API Endpoints
 
 - `POST /api/login` — Authenticate user
 - `GET /api/patients` — List patients (admin, user_patients)
@@ -95,14 +95,14 @@ This project demonstrates a sample test object (a healthcare platform used as a 
 - `PUT /api/drugs/:id` — Update drug (admin, user_drugs)
 - `DELETE /api/drugs/:id` — Remove drug (admin, user_drugs)
 
-### UI/UX
+### II. g. UI/UX
 
 - Responsive, modern design with CSS
 - Clean, user-friendly forms and lists
 - Dashboard and navigation adapt to user role
 - Quick-fill 'Today' button for patient DOB
 
-### Security
+### II. h. Security
 
 - Backend enforces role-based access for all sensitive endpoints
 
@@ -151,19 +151,19 @@ The platform will then be available at:
 
 ## VII. Platform Screenshots
 
-### Login Page
+### VII. a. Login Page
 
 ![Login Page](screenshots/platform/login.png)
 
-### Dashboard
+### VII. b. Dashboard
 
 ![Dashboard](screenshots/platform/dashboard.png)
 
-### Patients Page
+### VII. c. Patients Page
 
 ![Patients Page](screenshots/platform/patients.png)
 
-### Drugs Page
+### VII. d. Drugs Page
 
 ![Drugs Page](screenshots/platform/drugs.png)
 
@@ -171,13 +171,13 @@ The platform will then be available at:
 
 ## VIII. Other Screenshots
 
-### Azure Data Studio
+### VIII. a. Azure Data Studio
 
-#### Initial Database Schema
+#### VIII. b. Initial Database Schema
 
 ![Azure](screenshots/other/initial_schema.png)
 
-#### Examples of simple SQL queries
+#### VIII. c. Examples of simple SQL queries
 
 ![Azure](screenshots/other/select_all.png)
 
